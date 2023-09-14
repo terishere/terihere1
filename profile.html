@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mjng Tâm</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+    <link href="http://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" style="image/x-icon" />
+    <script src="https://kit.fontawesome.com/5468db3c8c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="left-section">
+            <div class="text" style="color:black">
+
+                <p style="text-align: center; font-size : 20px; color:#ff6666">Something about me:</p><br>
+                <div class="text"> - My name is Chu Minh Tam, my birthday is on 13/8. <br> <br> - I'm studying Computer Science in HCM University of Technology , my major is AI.<br> <br> - I love cats but i don't like dogs.<br> <br> - I'm kind of extrovert so i enjoy hanging
+                    out and talking to people even if they're not my friend >
+                    <. <br><br> - My favorite quote is : "If you don’t like your destiny, don’t accept it." - Naruto Uzumaki. <br><br> - I'm big fan of Anime, this is my top favorite one :
+                        <blockquote>+ Neon Genesis Evangelion<br>+ Black Clover<br>+ Chainsaw Man<br> ...</blockquote>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="center-section">
+            <img class="avatar" src="img.jpg" width="150px">
+            <h2>MjngTam</h2>
+            <p style="color:#ff6666">
+                Eiyo what's up bro !
+            </p>
+            <button class="button" onclick="location.href = 'https://www.facebook.com/terishere'"><i class="fab fa-facebook"></i> Facebook</button><br>
+            <button class="button" onclick="location.href ='https://www.instagram.com/mjng.tam/'"><i class="fab fa-instagram"></i> Instagram</button><br>
+            <button class="button" onclick="location.href = 'tel:0327628468'"><i class="fas fa-phone-alt"></i> 0327628468</button><br>
+            <button class="button" onclick="location.href = 'https://mail.google.com/mail/u/0/#inbox'"><i class="fa-solid fa-envelope"></i> minhtamvt2k4@gmail.com </button><br>
+        </div>
+
+        <div class="right-section">
+            <div class="right-up">
+                <audio autoplay>
+                    <source src = "evagelion-song.mp3" type = "audio/mpeg">
+                </audio>
+
+            </div>
+            <div class="right-down">
+                <div class="centered-content">
+                    <div id="real-time-clock">Loading 99% ... :v</div>
+
+                    <script>
+                        function updateTime() {
+                            const now = new Date(); 
+                            const clock = document.getElementById('real-time-clock');
+
+                            // Định dạng thời gian
+                            const hours = now.getHours();
+                            const amPm = hours >= 12 ? 'PM' : 'AM';
+                            const formattedHours = (hours % 12 || 12).toString().padStart(2, '0'); // Định dạng giờ 12 giờ
+
+                            const minutes = now.getMinutes().toString().padStart(2, '0');
+                            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+                            const dateString = now.toDateString();
+                            const timeString = `${formattedHours}:${minutes}:${seconds} ${amPm}`;
+
+                           
+                            clock.textContent = `Date: ${dateString}, Time: ${timeString}`;
+                        }
+
+                       
+                        setInterval(updateTime, 1000);
+
+                        
+                        updateTime();
+                    </script>
+                    <style>
+                        
+                        
+                        .centered-content {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                        }
+                        
+                        #real-time-clock {
+                            font-family: "Pacifico", cursive;
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #ff6666;
+                            text-align: center;
+                            padding: 10px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

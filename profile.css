@@ -1,0 +1,106 @@
+body {
+  background-image: url("https://images3.alphacoders.com/125/1256237.png");
+
+  background-size: cover;
+
+  padding: 45px;
+  color: white;
+}
+.avatar {
+  border-radius: 50%;
+  border: 2.5px solid;
+  border-color: #a53827;
+}
+h2 {
+  font-family: "Pacifico", cursive;
+  margin: 10px 0 8px 0;
+  font-weight: bold;
+  color: #a53827;
+}
+p {
+  font-family: "Pacifico", cursive;
+  color: #ff6666;
+
+  font-weight: bold;
+  font-style: initial;
+  width: 450px;
+}
+.button {
+  font-size: 15px;
+  margin-bottom: 20px;
+  background: #fff1c5;
+  border: 2.5px solid;
+  border-color: #a53827;
+  width: 250px;
+  padding: 13px 0 15px 0;
+  border-radius: 100px;
+  transition-property: color;
+  transition-duration: 0.3s;
+  font-family: "Pacifico", cursive;
+}
+.button:hover {
+  color: #912014;
+  background-color: #fbcf8e;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  flex-basis: calc(33.33% - 20px);
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+.center-section {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .left-section,
+  .center-section,
+  .right-section {
+    flex-basis: 100%; 
+    margin-bottom: 20px; 
+  }
+}
+.left-section {
+  background-color: #f6f4d1;
+  padding: 20px;
+  margin: 10px;
+
+  line-height: 1.5; 
+  border: 2px solid #a53827; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 5%;
+}
+.text {
+  font-family: "Pacifico", cursive;
+  color: #a53827;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-up {
+  flex: 5;
+  
+}
+
+.right-down {
+  flex: 1; 
+  background-color:#f6f4d1;
+  border: 2px solid #a53827;
+  border-radius: 0;
+
+}
+
+
