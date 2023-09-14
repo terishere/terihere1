@@ -61,14 +61,18 @@ p {
 }
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; 
+    flex-direction: column;
   }
-
+  @media (max-width: 768px) {
+    body {
+      background-size: contain;
+    }
+  }
   .left-section,
   .center-section,
   .right-section {
-    flex-basis: 100%; 
-    margin-bottom: 20px; 
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 }
 .left-section {
@@ -76,9 +80,9 @@ p {
   padding: 20px;
   margin: 10px;
 
-  line-height: 1.5; 
-  border: 2px solid #a53827; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  line-height: 1.5;
+  border: 2px solid #a53827;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
 }
 .text {
@@ -92,15 +96,11 @@ p {
 
 .right-up {
   flex: 5;
-  
 }
 
 .right-down {
-  flex: 1; 
-  background-color:#f6f4d1;
+  flex: 1;
+  background-color: #f6f4d1;
   border: 2px solid #a53827;
   border-radius: 0;
-
 }
-
-
